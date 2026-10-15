@@ -1,0 +1,63 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: 'divya1';
+    src: url(./assets/InterTight-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('./assets/file.woff2');
+}
+
+@font-face {
+    font-family: 'thin';
+    src: url("./assets/file2.woff2");
+}
+
+@font-face {
+    font-family: 'semibold';
+    src: url("./assets/file3.woff2");
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url("./assets/file4.woff2");
+}
+
+@font-face {
+    font-family: 'diff';
+    src: url("./assets/madefor-text.var.original.woff2");
+}
+
+#main {
+perspective: 100px;
+position: relative;
+}
+
+#tiltDiv{
+    width: fit-content;
+    height: fit-content;
+    
+}
+#section2 {
+perspective: 1000px;
+position: relative;
+}
+.rotateText{
+    transform-origin: 100% 70%;
+
+}
+
+#section6 {
+perspective: 1000px;
+position: relative;
+}
+.rotateText2{
+    transform-origin: 100% 70%;
+
+}
