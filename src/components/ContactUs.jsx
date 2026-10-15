@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useForm } from "@formspree/react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import contactBackground from '../assets/kannu.jpg'
 
 const ContactUs = () => {
 
@@ -20,7 +21,7 @@ const ContactUs = () => {
 }, [state]);
   return (
     <div className="w-full h-screen min-h-screen bg-white p-4 md:p-8">
-      <div className="w-full min-h-full bg-black rounded-3xl overflow-hidden bg-cover bg-center bg-[url('../src/assets/kannu.jpg')]">
+      <div className="w-full min-h-full bg-black rounded-3xl overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(${contactBackground})` }}>
         
         
         <h1 className="uppercase text-white text-[10vw] md:text-[6vw] font-bold tracking-wide m-5">
@@ -146,7 +147,6 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-
 
 
 

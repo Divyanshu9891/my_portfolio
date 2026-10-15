@@ -1,4 +1,5 @@
 import React from 'react'
+import codeRain from '../assets/code-rain.mp4'
 
 const WhatIDo = () => {
   return (
@@ -16,8 +17,9 @@ const WhatIDo = () => {
           loop
           muted
           autoPlay
+          playsInline
           className="w-full h-full object-cover"
-          src={"../src/assets/code-rain.mp4"}
+          src={codeRain}
         ></video>
       </div>
     </div>

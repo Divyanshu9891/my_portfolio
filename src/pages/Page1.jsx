@@ -3,6 +3,7 @@ import Page1Bottom from '../components/Page1Bottom'
 import TiltText from '../components/TiltText'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import heroImage from '../assets/divyanshu_Img.png'
 const Page1 = () => {
  const tiltREF = useRef(null);
  const [xVal, setXVal] = useState(0);
@@ -28,7 +29,7 @@ const Page1 = () => {
     <div id='main' onMouseMove={(e)=> {
       mouseMoving(e);
     }} className='h-screen p-7 relative bg-white'>
-      <div className='shadow-xl shadow-gray-700 h-full w-full  bg-[url("./assets/divyanshu_Img.png")] rounded-[50px] bg-cover relative'>
+      <div className='shadow-xl shadow-gray-700 h-full w-full rounded-[50px] bg-cover relative' style={{ backgroundImage: `url(${heroImage})` }}>
       <TiltText titleREF={tiltREF}/>
       <Page1Bottom/>
 

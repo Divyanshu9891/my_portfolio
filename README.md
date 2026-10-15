@@ -1,5 +1,11 @@
 # React + Vite
 
+## Deploy to GitHub Pages
+
+The GitHub Actions workflow builds the Vite app and publishes the `dist` folder
+to GitHub Pages whenever changes are pushed to `main`. In the repository's
+Settings > Pages, set the build and deployment source to **GitHub Actions**.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

@@ -2,6 +2,11 @@ import { useGSAP } from '@gsap/react'
 import React from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import reactLogo from '../assets/react-logo.webp'
+import nodejsLogo from '../assets/nodejs-logo.webp'
+import expressLogo from '../assets/expressjs-logo.png'
+import mongodbLogo from '../assets/mongodb-logo.png'
+import mysqlLogo from '../assets/mysql-logo.jpg'
 
 const Page2 = () => {
      gsap.registerPlugin(ScrollTrigger);
@@ -49,21 +54,19 @@ const Page2 = () => {
 
       <div className='flex items-center justify-center gap-15'>
           <div>
-            <img src={'../src/assets/react-logo.webp'}
-            className='w-15'/>
+            <img src={reactLogo} className='w-15' alt="React"/>
           </div>
            <div>
-            <img src={'../src/assets/nodejs-logo.webp'} className='w-33'/>
+            <img src={nodejsLogo} className='w-33' alt="Node.js"/>
           </div>
            <div>
-            <img src={'../src/assets/expressjs-logo.png'}
-            className='w-33'/>
+            <img src={expressLogo} className='w-33' alt="Express"/>
           </div>
            <div>
-            <img src={'../src/assets/mongodb-logo.png'} className='w-33'/>
+            <img src={mongodbLogo} className='w-33' alt="MongoDB"/>
           </div>
            <div>
-            <img src={'../src/assets/mysql-logo.jpg'} className='w-28'/>
+            <img src={mysqlLogo} className='w-28' alt="MySQL"/>
           </div>
       </div>
               <div className='h-1 w-1/2 relative left-1/2 -translate-x-1/2 mt-20 bg-black '></div>

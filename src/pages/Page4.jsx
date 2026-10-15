@@ -1,4 +1,5 @@
 import React from 'react'
+import moonVideo from '../assets/moon-rotate.mp4'
 
 const Page4 = () => {
   return (
@@ -11,8 +12,9 @@ const Page4 = () => {
           loop
           muted
           autoPlay
+          playsInline
           className="w-full h-full object-cover"
-          src={"../src/assets/moon-rotate.mp4"}
+          src={moonVideo}
         ></video>
       </div>
     </div>

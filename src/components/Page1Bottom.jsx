@@ -1,6 +1,8 @@
 import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap'
 import React from 'react'
+import androidLogo from '../assets/android-logo.png'
+import iosLogo from '../assets/ios-logo.png'
 
 const Page1Bottom = () => {
 
@@ -22,8 +24,8 @@ const Page1Bottom = () => {
          <h2 className='text-neutral-400'>DEVELOPER</h2>
         </div>
         <div  className='flex flex-col  gap-7 mb-4 '>
-            <img id='banner' src={'../src/assets/android-logo.png'} className='h-18 '/>
-            <img id='banner' src={'../src/assets/ios-logo.png'} className='h-15 rounded-full'/>
+            <img id='banner' src={androidLogo} className='h-18 ' alt="Android"/>
+            <img id='banner' src={iosLogo} className='h-15 rounded-full' alt="iOS"/>
         </div>
     </div>
   )
